@@ -1,0 +1,365 @@
+/* Universal */
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+span {
+  font-family: 'EB Garamond', serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: lightblue;
+  position: relative;
+  z-index: 3;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  list-style: none;
+  margin: 0.75rem;
+  border: 1px solid navy;
+  padding: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav li:hover {
+  background-color: #33aabb;
+  color: white;
+}
+
+nav a {
+  padding: 0.8rem;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.branding span {
+  font-size: 2rem;
+}
+
+.branding img {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .branding img {
+    display: none;
+  }
+
+  .branding span {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Main banner */
+
+.main {
+  width: 100%;
+  height: 38rem;
+  background-image: url('../images/winding_street.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.main-message {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: lightblue;
+  opacity: 0.9;
+  width: 70%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.main h1 {
+  font-size: 3.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main h2 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.main-button {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.main-button a {
+  background-color: lightblue;
+  font-size: 2rem;
+  border: 2px solid navy;
+  padding: 1.5rem;
+}
+
+.main-button a:hover {
+  background-color: #33aabb;
+  color: white;
+}
+
+@media only screen and (max-width: 1254px) {
+
+  .main-button a {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+
+  .main-message h1 {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .main {
+  width: 100%;
+  }
+
+  .main-message {
+    padding: 1rem;
+    top: 3rem;
+  }
+
+  .main-button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .main-message h1 {
+    width: 90%;
+    font-size: 2.8rem;
+  }
+}
+
+/* Three sections */
+
+.icons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.icons img {
+  margin: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .icons {
+    display: none;
+  }
+}
+
+/* Dreamy quote */
+.quote {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+.quote img {
+  width: 23%;
+  height: 23%;;
+  left: 4rem;
+  position: relative;
+  opacity: 0.4;
+}
+
+.words h1 {
+  font-size: 2rem;
+  font-style: italic;
+  position: relative;
+  top: 2rem;
+  right: 4rem;
+  background-color: white;
+  opacity: 0.7;
+  text-align: left;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  width: 60%;
+}
+
+.words span {
+  color: navy;
+  font-size: 2rem;
+  position: relative;
+  top: 1rem;
+  right: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .quote {
+    background-color: white;
+    width: 80%;
+  }
+
+  .quote h1 {
+    display: none;
+  }
+
+  .quote img {
+    display:none;
+  }
+
+  .words span {
+    right: 0;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .words {
+    border: 2px solid lightblue;
+  }
+}
+
+/* Sections */
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 75%;
+}
+
+.section h1 {
+  color: darkgray;
+  font-size: 2.5rem;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 2px solid lightblue;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.box span {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .section {
+    width: 60%;
+  }
+
+  .section h1 {
+    text-align: center;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+}
+
+.boxes.wishlist {
+  margin-bottom: 1.5rem;
+}
+
+   /* Footer */
+
+footer {
+  height: 4rem;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  color: white;
+  font-size: 1.2rem;
+}
